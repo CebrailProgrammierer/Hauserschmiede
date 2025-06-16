@@ -1,0 +1,112 @@
+@media screen {
+
+#nav li.startseite, #nav li.kontakt, #nav li.anfahrt, #nav li.impressum, #nav li.datenschutz, #nav li.datenschutzerklaerung { display: none !important; }
+
+
+	#nav ul, #nav li { margin: 0; list-style: none; z-index: 99; }
+	#nav a:hover { text-decoration: none; transition: color 0.3s ease-in-out 0s }
+	
+	
+	#nav li
+	{
+		position: relative;
+	}
+	#nav li a
+	{
+		color: #fff;
+		display: block;
+		padding: 0 1.5em;
+		font-weight: 600; 
+		text-transform: uppercase;
+		font-size: 90%; text-decoration: none; transition: none; white-space: nowrap;
+		transition: color 0.3s ease-in-out 0s
+	}
+	
+	#nav li a:active
+	{
+		color: #fff !important;
+	}
+
+
+	/* first level */
+	
+	#nav ul.navigation
+	{
+		background-color: transparent;
+		float: right; 
+		margin: 80px 0 0 40px;
+	}
+	
+	#nav ul.navigation > li { float: left; border-left: 2px solid #fff; }
+	#nav ul.navigation > li.start { border: none; }
+	
+	#nav ul.navigation > li.first
+	{
+		
+	}
+	#nav ul.navigation > li > a
+	{
+		/*height: 16px;*/
+		text-align: center;
+		padding: 4px 15px 0px 15px;
+		color: #fff;
+	}
+	#nav ul.navigation > li > a:hover,
+	#nav ul.navigation > li:hover > a
+	{
+		color: #d32969;
+	}
+	#nav ul.navigation > li.active > a.active
+	{
+		color: #d32969;
+	}
+						
+
+	/* second level */
+	
+	#nav li ul
+	{
+		background: #d32969;
+		padding-top: 4px;
+		border-radius: 0;
+			visibility: hidden;
+			opacity: 0; 
+			transition: opacity 0.3s ease-in-out 0s, visibility 0s ease-in-out 0.3s;
+	}
+	#nav li ul.l2 { margin-top: 0; position: absolute; top: 100%; }
+	#nav li ul.l3, #nav li:hover ul.l3 { padding-top: 0; padding-left: 20px; box-sizing: border-box; font-size: 80%; background: transparent; }
+	#nav li ul.l4, #nav li:hover ul.l4 { padding-top: 0; padding-left: 35px; box-sizing: border-box; background: transparent; }
+	#nav li ul.l5, #nav li:hover ul.l5 { padding-top: 0; padding-left: 55px; box-sizing: border-box; background: transparent; }
+	
+	#nav li:hover ul
+	{
+		left: 0px;
+		min-width: 100%;
+			visibility: visible;
+			opacity: 1;
+			transition: opacity 0.3s ease-in-out; 
+	}
+	#nav li:not( :first-child ):hover ul
+	{
+	}
+	#nav li ul a
+	{
+		padding: 0 14px 4px 14px;
+		color: #fff;
+		text-transform: none;
+	}
+	#nav li ul li a:hover
+	{
+		color: #000;
+	}
+	#nav li ul li.active a.active
+	{
+		color: #000;
+	}
+						
+
+
+
+
+}
+

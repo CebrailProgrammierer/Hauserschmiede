@@ -1,0 +1,126 @@
+/**
+ * YAML CSS Framework
+ * @version         v4.0.1
+ */
+
+@media screen {
+
+	/* force vertical scrollbar */
+	body { overflow-y: scroll; }
+
+	/* Layout Module Configuration */
+	.ym-wrapper { width: 100%; max-width: 1200px; margin: 0 auto; }
+	 #header, #nav, #main, #footer { min-width: 1000px; }
+
+	.mpsn-gcm { width: 100%; }
+	.mpsn-gcm .ym-gcbox { padding: 0; }
+
+	.ym-wbox { padding: 4em 2em; }
+
+
+	/* Element Styling */
+
+	body { background: #2d3131; } 
+
+
+	#logo { max-width: 360px; height: auto; margin: 26px 0 22px 0em; }
+
+	#nav { background: #2d3131; }
+
+	#header { display: none; }
+	#header .ym-wrapper {  position: relative; }
+	body.home #header, body.home #header #slider li { display: block; height: 700px; height: 75vh; background: url(../images/slide1.jpg) no-repeat center center transparent; background-size: cover; }
+	body.fancybox-active #header { background-attachment: scroll; }
+	#header #header-links { display: none; position: absolute; right: 10px; top: 6px; text-align: right; background: none; }
+
+	#slider .slogan  { position: absolute; left: 15%; bottom: 35%; max-width: 1200px; margin: 0 auto; }
+	.slogan h2, .slogan h3 { text-transform: uppercase; margin: 0; color: #fff; line-height: 1em; background: rgba(211, 41, 105, 0.7); padding: 20px 20px 10px 20px; display: inline-block; }
+	.slogan h3 { font-size: 150%; font-weight: 700; margin-bottom: -18px; }
+	.slogan h2 { font-size: 250%; font-weight: 300; }
+	.slogan:hover, .slogan a:hover { text-decoration: none; }
+
+	#top-buttons { background: #fff; z-index: 101; position: relative; }
+	#top-buttons .ym-wrapper { max-width: 1280px; }
+	#top-buttons .ym-wbox { padding: 0em 20px 0em 20px; }
+	#top-buttons .ym-grid { margin-top: -52px; height: 106px; }
+	#top-buttons .ym-grid .ym-grid { margin-top: 0; }
+	#top-buttons .ym-grid .ym-gbox { color: #fff; text-align: center; padding: 0 20px; font-size: 160%; }
+	#top-buttons a { display: block; color: #fff; font-weight: inherit; padding: 1em; transition: all 0.4s ease; background: transparent url(../images/planung.jpg) center center no-repeat; }
+	#top-buttons a:hover { text-decoration: none; box-shadow: 12px 12px 20px 1px rgba(0,0,0,0.4); transition: all 0.4s ease; }
+	#top-buttons .ym-grid .planung a { background-image: url(../images/planung.jpg); }
+	#top-buttons .ym-grid .konzeption a { background-image: url(../images/konzeption.jpg); }
+	#top-buttons .ym-grid .ausarbeitung a { background-image: url(../images/ausarbeitung.jpg); }
+	#top-buttons .ym-grid .durchfuehrung a { background-image: url(../images/durchfuehrung.jpg); }
+
+	#main { background: #fff; }
+	#main .ym-wbox { min-height: 350px; }
+	body.home #main .ym-wbox { min-height: auto; padding: 6em 7em 4em 7em; }
+	body.home #main .mpsn-gridText5050 .ym-gl, body.home #main .mpsn-gb { width: 65%; }
+	body.home #main .mpsn-gridText5050 .ym-gr, body.home #main .mpsn-gs { width: 35%; }
+
+	body.team #content img[src*="stoerer_team.png"] { margin: 0 auto; margin-bottom: -159px; display: block; }
+	body.team #content p + hr { margin-bottom: 200px; }
+	body.team #content .ym-grid .mpsn-gs { width: 50%; } 
+	body.team #content .ym-grid .mpsn-gb { width: 50%; }
+	.mpsn-content > .ym-grid img { max-width: 100%; height: auto; }
+
+	.section { background: #fff; }
+
+	#projekte .ym-wrapper { max-width: 1280px; }
+	#projekte .ym-wbox { padding: 2em 20px 8em 20px; }
+	#projekte .ym-gbox { padding: 0 20px; }
+	#projekte .mpsn-card { margin: 0; }
+	#projekte .mpsn-card.aktuelle-projekte { background: #d32969; text-align: center; }
+	#projekte .mpsn-card .image { height: 200px; overflow: hidden; border-bottom: 6px solid #fff;}
+	#projekte .mpsn-card.aktuelle-projekte .text { background: #d32969; }
+	#projekte .mpsn-card.aktuelle-projekte h3, #projekte .mpsn-card.aktuelle-projekte p { text-transform: none; font-size: 135%; }
+	#projekte .mpsn-card.aktuelle-projekte .image { background: #d32969; padding-top: 3em; box-sizing: border-box; border: none; height: 206px; }
+	#projekte .mpsn-card .text { height: 200px; padding: 3em 1.5em; box-sizing: border-box; background: #2e3132; }
+	#projekte .mpsn-card h3 { color: #fff; margin: 0; }
+	#projekte .mpsn-card p { color: #fff; margin: 0.25em 0 0 0; font-size: 125%; }
+	#projekte .mpsn-card a { color: #fff; font-weight: inherit; }
+	#projekte .mpsn-card a:hover { text-decoration: none; }
+
+	#footer { background: #2d3131; color: #fff; line-height: 1.5em; }
+	#footer .ym-wbox { padding: 3em 2em; }
+	#footer .ym-gbox { padding: 0 1em 0 0; }
+  	#footer p { margin: 0; }
+  	#footer a { color: #fff; font-weight: 400; }
+	
+	#footer .navigation { width: 49%; }
+	#footer .right { width: 51%; font-size: 95%; }
+	#footer .right .mpsn-gs { width: 38%; }
+	#footer .right .mpsn-gb { width: 62%; }
+	#footer .navigation, #footer .navigation a { font-weight: 500; text-transform: uppercase; font-size: 105%; }
+	#footer .ym-gbox { padding: 0 0.5em 0 0; }
+
+	#footer span { white-space: nowrap; }
+	#footer span.bullet:before { content: "| "; display: inline-block; margin: 0 0.65em 0 0.5em; }
+
+
+	#scrolltop { position: fixed; right: 20px; bottom: 20px; padding: 0px; opacity: 0; transition: opacity 1s ease; z-index: 99; }
+	#scrolltop img { margin: 0; display: block; }
+	.scrolled #scrolltop { opacity: 1; }
+
+
+
+	/* skip links styling */
+	.ym-skiplinks a.ym-skip:focus,
+	.ym-skiplinks a.ym-skip:active {
+		color:#fff;
+		background:#333;
+		border-bottom:1px #000 solid;
+		padding:10px 0;
+		text-align: center;
+		text-decoration:none;
+	}
+
+}
+
+
+
+@media print
+{
+#logo { display: none; }
+#header { height: auto; }
+}
